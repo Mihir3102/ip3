@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2>Calculator</h2>
-    <input type="number" name="num1" id="num1" placeholder="Enter no1">
-    <input type="number" name="num2" id="num2" placeholder="Enter no2">
-    <button type="button" onclick="calci('+')">+</button>
-    <button type="button" onclick="calci('-')">-</button>
-    <button type="button" onclick="calci('*')">*</button>
-    <button type="button" onclick="calci('/')">/</button>
-    <h3 id="result"></h3>
+
+    <div class="calculator">
+
+        <div class="top">
+            <h1>Calculator</h1>
+            <p>Simple • Smart • Fast</p>
+        </div>
+
+        <div class="inputs">
+            <input type="number" id="num1" placeholder="Enter number 1">
+            <input type="number" id="num2" placeholder="Enter number 2">
+        </div>
+
+        <div class="buttons">
+            <button onclick="calci('+')" class="operator">+</button>
+            <button onclick="calci('-')" class="operator">−</button>
+            <button onclick="calci('*')" class="operator">×</button>
+            <button onclick="calci('/')" class="operator">÷</button>
+        </div>
+
+        <div class="result-box">
+            <span>RESULT</span>
+            <h2 id="result">0</h2>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
